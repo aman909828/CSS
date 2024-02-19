@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* Custom variable */
+            --default:200px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+          height:800px;
+          background-color: beige;
+          border: 1px solid red;  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .box{
+            height:var(--default);
+            width: 200px;
+            position: relative;
+            background-color: rgb(187, 247, 24);
+            border: 1px solid rgb(23, 13, 210);
+            margin: 5px;
+            padding: 5px;
+            /*animation: box1 5s linear 1s 1 alternate forwards;*/
+            transition: all 5s ease 1s;
+
+        }
+        .box:hover{
+            background-color: blueviolet;
+            /*transform: rotate(-65deg) scale(.5);
+            transform: skew(-67deg);*/
+            transform: translate(500px,500px);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>hello world</p>
+        </div>
+    </div>
+</body>
+</html>
