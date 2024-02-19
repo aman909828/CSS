@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* Custom variable */
+            --default:200px;
+        }
+        .container{
+          height:800px;
+          background-color: beige;
+          border: 1px solid red;  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .box{
+            height:var(--default);
+            width: 200px;
+            background-color: rgb(208, 13, 156);
+            border: 1px solid rgb(23, 13, 210); 
+            display: flex;
+            justify-content: center;
+        }
+        @media (min-width:500px) and (max-width:800px){
+            .box{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>hello world</p>
+        </div>
+    </div>
+</body>
+</html>
