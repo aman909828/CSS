@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* Custom variable */
+            --default:200px;
+        }
+        .container{
+          height:800px;
+          background-color: beige;
+          border: 1px solid red;  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .box{
+            height:var(--default);
+            width: 200px;
+            background-color: rgb(236, 236, 31);
+            border: 1px solid rgb(23, 13, 210); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 15px 10px 2px 1px gray;
+        }
+        p{
+            height: 100px;
+            width: 100px;
+            text-shadow: 10px 10px 2px rgb(13, 214, 80);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p id="text1">hello world</p>
+        </div>
+    </div>
+</body>
+</html>
